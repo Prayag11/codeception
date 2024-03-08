@@ -6,7 +6,10 @@ use Codeception\Util\Locator;
 
 class aswPostCest{
     public function SinglePost(AcceptanceTester $I){
+
+        $I->wantTo('verify post heading, author name and the date of the post.');
         $I->amOnPage('https://americansongwriter.com/');
+
         $I->click('#page > section > div.g1-row-inner > div > div > div.g1-mosaic-item.g1-mosaic-item-1 > article > div.entry-body > header > h3 > a');
 
         $heading =$I->grabTextFrom('.entry-header');
@@ -15,6 +18,6 @@ class aswPostCest{
         
         $date =$I->grabTextFrom('.entry-date');
 
-        echo  $heading," ",$author," ",$date;
+        echo  $heading," ",$author," ",$date; // output 
     }
 }
