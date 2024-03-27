@@ -16,5 +16,6 @@ class aswPostCest{
         $date =$I->grabTextFrom('.entry-date');
 
         echo  $heading," ",$author," ",$date;
+
     }
 }
