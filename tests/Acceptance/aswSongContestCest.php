@@ -7,7 +7,7 @@ use Codeception\Util\Locator;
 class aswSongContestCest
 {
     public function _before(AcceptanceTester $I){
-        $I->amOnPage('/song-contest-checkout-2024');
+        $I->amOnPage('https://savageventures-develop.go-vip.net/song-contest-checkout-2024/');
     }
       // tests
     public function songContestMandatoryField(AcceptanceTester $I){
